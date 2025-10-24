@@ -1,9 +1,19 @@
 ---
-import FormLayout from "../layouts/FormLa";
+import FormLayout from "../layouts/FormLayout.astro";
 import InputText from "../components/InputText.astro";
 ---
 <FormLayout>
   <h2 slot="subtitulo">Ingrese informacion </h2>
   <InputText
-  slot ="caja-texto"/>
+  	etiqueta="Nombre Completo"
+  	slot ="caja-texto"
+/>
+ <InputText
+	etiqueta="Apellido completo"
+  	slot ="caja-texto"
+  />
+<InputText
+	etiqueta="correo electronico"
+  	slot ="caja-texto-email"
+  />
 </FormLayout>
